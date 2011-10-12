@@ -116,7 +116,7 @@
 }
 
 - (NSString*)stringValueWithEncoding:(NSStringEncoding)encoding {
-	return [[NSString alloc] initWithData:self encoding:encoding];
+	return [[[NSString alloc] initWithData:self encoding:encoding] autorelease];
 }
 
 @end
